@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Ved.jx" }],
   creator: "Ved.jx",
   publisher: "Ved.jx",
+  icons: {
+    icon: '/Icon.svg',
+    shortcut: '/Icon.svg',
+    apple: '/Icon.svg',
+  },
   formatDetection: {
     email: false,
     address: false,

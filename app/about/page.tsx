@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -35,19 +36,35 @@ export default function About() {
 
       {/* Story Section */}
       <section className="py-20 bg-[#101728]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-100 mb-6">Our Story</h2>
-            <p className="text-gray-300 mb-6">
-              Ved.jx was created by <strong>Jake Shoffner</strong> during his undergraduate degree in Computer Science
-              at the University of Tennessee, Knoxville. Growing up in North Knoxville his whole life, he's seen the
-              rise of tech and how important it is to get your name out there.
-            </p>
-            <p className="text-gray-300 mb-6">
-              It's never been more important than now to have a strong online presence. Whether you're a small business
-              owner, entrepreneur, or individual with a brand to build, having a professional website is essential in
-              today's digital world.
-            </p>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-100 mb-12 text-center">Our Story</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div className="order-2 lg:order-1 lg:col-span-2">
+              <p className="text-gray-300 mb-6 text-lg">
+                Ved.jx emerged from <strong>Jake Shoffner's</strong> passion for bridging technology and opportunity.
+                While earning his Computer Science degree at the University of Tennessee, Knoxville, Jake witnessed
+                firsthand how Knoxville's digital landscape evolved—and how a compelling online presence became
+                the difference between being seen and being overlooked.
+              </p>
+              <p className="text-gray-300 text-lg">
+                In today's digital-first world, your website isn't just a nice-to-have—it's your storefront, your
+                portfolio, and your first impression rolled into one. Whether you're launching a startup, growing a
+                local business, or building your personal brand, a professional web presence is no longer optional.
+                It's how you compete, connect, and convert.
+              </p>
+            </div>
+            <div className="order-1 lg:order-2 lg:col-span-1 flex justify-center">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#0DEFFE] to-[#4FADFE] rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+                <div className="relative">
+                  <img
+                    src="/profile_Pic.png"
+                    alt="Jake Shoffner - Founder of Ved.jx"
+                    className="rounded-2xl shadow-2xl w-full max-w-xs mx-auto border-2 border-[#1a1f2e]"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
