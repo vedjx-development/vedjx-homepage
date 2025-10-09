@@ -1,8 +1,18 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Ved.jx',
-  description: 'Privacy policy for Ved.jx web services.',
+  title: 'Privacy Policy',
+  description: 'Privacy policy for Ved.jx web services. Learn how we collect, use, and protect your personal information.',
+  robots: {
+    index: false, // Privacy pages typically shouldn't be indexed
+    follow: true,
+  },
+  openGraph: {
+    title: 'Privacy Policy - Ved.jx',
+    description: 'Privacy policy for Ved.jx web services.',
+    url: 'https://vedjx.netlify.app/privacy',
+    type: 'website',
+  },
 };
 
 export default function Privacy() {

@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { LocalBusinessStructuredData, WebsiteStructuredData } from '@/components/StructuredData';
 
 export default function Home() {
   return (
-    <div className="pt-16">
+    <>
+      <LocalBusinessStructuredData />
+      <WebsiteStructuredData />
+      <div className="pt-16">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#0a0e1a] via-[#101728] to-[#1a1f2e] overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -161,6 +165,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

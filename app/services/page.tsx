@@ -1,9 +1,22 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { ServiceStructuredData } from '@/components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'Services - Ved.jx',
-  description: 'Professional web design, hosting, maintenance, SEO, and logo design services in Knoxville, Tennessee.',
+  title: 'Services',
+  description: 'Professional web design, hosting, maintenance, SEO, and logo design services in Knoxville, Tennessee. Free consultation available.',
+  keywords: ['web design services', 'web hosting', 'website maintenance', 'SEO services', 'logo design', 'Knoxville web services'],
+  openGraph: {
+    title: 'Web Design & Development Services - Ved.jx',
+    description: 'Professional web design, hosting, maintenance, SEO, and logo design services in Knoxville, Tennessee.',
+    url: 'https://vedjx.netlify.app/services',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Web Services - Ved.jx',
+    description: 'Professional web design, hosting, maintenance, SEO, and logo design services in Knoxville, Tennessee.',
+  },
 };
 
 export default function Services() {
@@ -77,7 +90,9 @@ export default function Services() {
   ];
 
   return (
-    <div className="pt-16">
+    <>
+      <ServiceStructuredData />
+      <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0a0e1a] via-[#101728] to-[#1a1f2e] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,6 +195,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

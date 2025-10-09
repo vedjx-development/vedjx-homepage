@@ -2,8 +2,20 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Pricing - Ved.jx',
-  description: 'Transparent and fair pricing for web design and development services in Knoxville, Tennessee.',
+  title: 'Pricing',
+  description: 'Transparent and fair pricing for web design and development services in Knoxville, Tennessee. Starting at $60/hr with flexible project-based rates.',
+  keywords: ['web design pricing', 'affordable web development', 'Knoxville web design cost', 'website pricing'],
+  openGraph: {
+    title: 'Fair & Transparent Pricing - Ved.jx',
+    description: 'Transparent and fair pricing for web design and development services in Knoxville, Tennessee.',
+    url: 'https://vedjx.netlify.app/pricing',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Pricing - Ved.jx',
+    description: 'Transparent and fair pricing for web design and development services in Knoxville, Tennessee.',
+  },
 };
 
 export default function Pricing() {

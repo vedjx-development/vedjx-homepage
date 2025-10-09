@@ -1,8 +1,19 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About - Ved.jx',
-  description: 'Learn about Ved.jx and our commitment to providing excellent web solutions in Knoxville, Tennessee.',
+  title: 'About',
+  description: 'Learn about Ved.jx and our commitment to providing excellent web solutions in Knoxville, Tennessee. Founded by Jake Shoffner with 5+ years of experience.',
+  openGraph: {
+    title: 'About Ved.jx - Web Solutions in Knoxville',
+    description: 'Learn about Ved.jx and our commitment to providing excellent web solutions in Knoxville, Tennessee.',
+    url: 'https://vedjx.netlify.app/about',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About Ved.jx',
+    description: 'Learn about Ved.jx and our commitment to providing excellent web solutions in Knoxville, Tennessee.',
+  },
 };
 
 export default function About() {

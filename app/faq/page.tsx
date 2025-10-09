@@ -1,8 +1,8 @@
 'use client';
 
-import { Metadata } from 'next';
 import { useState } from 'react';
 import Link from 'next/link';
+import { FAQStructuredData } from '@/components/StructuredData';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -63,7 +63,9 @@ export default function FAQ() {
   };
 
   return (
-    <div className="pt-16">
+    <>
+      <FAQStructuredData faqs={faqs} />
+      <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0a0e1a] via-[#101728] to-[#1a1f2e] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -142,6 +144,7 @@ export default function FAQ() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

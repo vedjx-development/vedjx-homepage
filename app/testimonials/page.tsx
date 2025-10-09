@@ -1,9 +1,21 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { AggregateRatingStructuredData } from '@/components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'Testimonials - Ved.jx',
-  description: 'See what our clients say about our web design and development services in Knoxville, Tennessee.',
+  title: 'Testimonials',
+  description: 'See what our clients say about our web design and development services in Knoxville, Tennessee. 100% client satisfaction with 5-star reviews.',
+  openGraph: {
+    title: 'Client Testimonials - Ved.jx',
+    description: 'See what our clients say about our web design and development services in Knoxville, Tennessee.',
+    url: 'https://vedjx.netlify.app/testimonials',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Client Testimonials - Ved.jx',
+    description: 'See what our clients say about our web design and development services in Knoxville, Tennessee.',
+  },
 };
 
 export default function Testimonials() {
@@ -28,8 +40,16 @@ export default function Testimonials() {
     },
   ];
 
+  const reviews = testimonials.map(t => ({
+    author: t.name,
+    rating: t.rating,
+    reviewBody: t.quote,
+  }));
+
   return (
-    <div className="pt-16">
+    <>
+      <AggregateRatingStructuredData reviews={reviews} />
+      <div className="pt-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0a0e1a] via-[#101728] to-[#1a1f2e] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -144,6 +164,7 @@ export default function Testimonials() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

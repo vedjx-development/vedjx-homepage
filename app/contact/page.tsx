@@ -2,8 +2,20 @@ import { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact - Ved.jx',
-  description: 'Get in touch with Ved.jx for a free consultation about your web design project in Knoxville, Tennessee.',
+  title: 'Contact',
+  description: 'Get in touch with Ved.jx for a free consultation about your web design project in Knoxville, Tennessee. Call 865-978-2087 or email us today.',
+  keywords: ['contact web designer', 'Knoxville web design contact', 'free consultation', 'web design quote'],
+  openGraph: {
+    title: 'Contact Ved.jx - Free Consultation',
+    description: 'Get in touch with Ved.jx for a free consultation about your web design project in Knoxville, Tennessee.',
+    url: 'https://vedjx.netlify.app/contact',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Contact Ved.jx',
+    description: 'Get in touch with Ved.jx for a free consultation about your web design project in Knoxville, Tennessee.',
+  },
 };
 
 export default function Contact() {
