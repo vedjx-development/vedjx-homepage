@@ -127,7 +127,7 @@ export default function About() {
                 Maximum Value
               </h3>
               <p className="text-gray-400">
-                We try my best to get the most value out of your website ideas,
+                We try our best to get the most value out of your website ideas,
                 ensuring every feature serves a purpose and helps you achieve
                 your goals.
               </p>
