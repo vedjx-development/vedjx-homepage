@@ -103,9 +103,9 @@ export default function About() {
                 Fair Pricing
               </h3>
               <p className="text-gray-400">
-                I provide extremely fair pricing that works for small businesses
-                and individuals. Your budget matters, and I work to deliver
-                maximum value.
+                We provide extremely fair pricing that works for small
+                businesses and individuals. Your budget matters, and we work to
+                deliver maximum value.
               </p>
             </div>
 
@@ -115,7 +115,7 @@ export default function About() {
                 Excellent Customer Service
               </h3>
               <p className="text-gray-400">
-                I always go the extra mile, explaining technical concepts in an
+                We always go the extra mile, explaining technical concepts in an
                 understandable way. You'll never feel lost or confused about
                 your project.
               </p>
@@ -127,7 +127,7 @@ export default function About() {
                 Maximum Value
               </h3>
               <p className="text-gray-400">
-                I try my best to get the most value out of your website ideas,
+                We try my best to get the most value out of your website ideas,
                 ensuring every feature serves a purpose and helps you achieve
                 your goals.
               </p>
@@ -144,9 +144,8 @@ export default function About() {
               5 Years of Experience
             </h2>
             <p className="text-lg text-gray-400 mb-8">
-              With half a decade of web development experience and a Computer
-              Science education from the University of Tennessee, I bring both
-              technical expertise and practical know-how to every project.
+              With over half a decade of web development experience, we bring
+              both technical expertise and practical know-how to every project.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
@@ -173,7 +172,7 @@ export default function About() {
             Ready to Work Together?
           </h2>
           <p className="text-xl text-cyan-100 mb-8">
-            Let's discuss how I can help bring your website vision to life
+            Let's discuss how we can help bring your website vision to life
           </p>
           <a
             href="/contact"

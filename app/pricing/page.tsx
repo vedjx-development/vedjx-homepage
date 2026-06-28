@@ -1,20 +1,28 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
+import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Pricing',
-  description: 'Transparent and fair pricing for web design and development services in Knoxville, Tennessee. Starting at $60/hr with flexible project-based rates.',
-  keywords: ['web design pricing', 'affordable web development', 'Knoxville web design cost', 'website pricing'],
+  title: "Pricing",
+  description:
+    "Transparent and fair pricing for web design and development services in Knoxville, Tennessee. Starting at $60/hr with flexible project-based rates.",
+  keywords: [
+    "web design pricing",
+    "affordable web development",
+    "Knoxville web design cost",
+    "website pricing",
+  ],
   openGraph: {
-    title: 'Fair & Transparent Pricing - Ved.jx',
-    description: 'Transparent and fair pricing for web design and development services in Knoxville, Tennessee.',
-    url: 'https://vedjx.netlify.app/pricing',
-    type: 'website',
+    title: "Fair & Transparent Pricing - Ved.jx",
+    description:
+      "Transparent and fair pricing for web design and development services in Knoxville, Tennessee.",
+    url: "https://vedjx.netlify.app/pricing",
+    type: "website",
   },
   twitter: {
-    card: 'summary',
-    title: 'Pricing - Ved.jx',
-    description: 'Transparent and fair pricing for web design and development services in Knoxville, Tennessee.',
+    card: "summary",
+    title: "Pricing - Ved.jx",
+    description:
+      "Transparent and fair pricing for web design and development services in Knoxville, Tennessee.",
   },
 };
 
@@ -43,21 +51,22 @@ export default function Pricing() {
               <div className="text-6xl md:text-7xl font-bold text-gray-100 mb-4">
                 ~$60<span className="text-3xl text-gray-400">/hr</span>
               </div>
-              <p className="text-xl text-gray-300">
-                Approximate hourly rate
-              </p>
+              <p className="text-xl text-gray-300">Approximate hourly rate</p>
             </div>
 
             <div className="bg-[#0a0e1a]/80 backdrop-blur-sm p-6 rounded-xl">
               <p className="text-lg text-gray-300 text-center">
-                Pricing varies based on project requirements and scope. Every project is unique,
-                and rates are adjusted to ensure you get the best value for your specific needs.
+                Pricing varies based on project requirements and scope. Every
+                project is unique, and rates are adjusted to ensure you get the
+                best value for your specific needs.
               </p>
             </div>
           </div>
 
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-100 mb-4">What Affects Project Cost?</h2>
+            <h2 className="text-3xl font-bold text-gray-100 mb-4">
+              What Affects Project Cost?
+            </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
               Several factors influence the final cost of your project
             </p>
@@ -66,34 +75,35 @@ export default function Pricing() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {[
               {
-                icon: '📄',
-                title: 'Number of Pages',
-                description: 'More pages mean more design and development time',
+                icon: "📄",
+                title: "Number of Pages",
+                description: "More pages mean more design and development time",
               },
               {
-                icon: '⚙️',
-                title: 'Functionality',
-                description: 'Custom features and integrations add complexity',
+                icon: "⚙️",
+                title: "Functionality",
+                description: "Custom features and integrations add complexity",
               },
               {
-                icon: '🎨',
-                title: 'Design Complexity',
-                description: 'Highly custom designs require more time and effort',
+                icon: "🎨",
+                title: "Design Complexity",
+                description:
+                  "Highly custom designs require more time and effort",
               },
               {
-                icon: '📱',
-                title: 'Responsiveness',
-                description: 'Ensuring perfect display across all devices',
+                icon: "📱",
+                title: "Responsiveness",
+                description: "Ensuring perfect display across all devices",
               },
               {
-                icon: '🔌',
-                title: 'Integrations',
-                description: 'Third-party services and API connections',
+                icon: "🔌",
+                title: "Integrations",
+                description: "Third-party services and API connections",
               },
               {
-                icon: '⏰',
-                title: 'Timeline',
-                description: 'Rush projects may require adjusted pricing',
+                icon: "⏰",
+                title: "Timeline",
+                description: "Rush projects may require adjusted pricing",
               },
             ].map((factor, index) => (
               <div
@@ -102,7 +112,9 @@ export default function Pricing() {
               >
                 <div className="text-4xl flex-shrink-0">{factor.icon}</div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-100 mb-1">{factor.title}</h3>
+                  <h3 className="text-lg font-semibold text-gray-100 mb-1">
+                    {factor.title}
+                  </h3>
                   <p className="text-gray-400">{factor.description}</p>
                 </div>
               </div>
@@ -115,7 +127,9 @@ export default function Pricing() {
       <section className="py-20 bg-[#0a0e1a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-100 mb-4">What's Included</h2>
+            <h2 className="text-4xl font-bold text-gray-100 mb-4">
+              What's Included
+            </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
               Every project includes these valuable features at no extra cost
             </p>
@@ -124,39 +138,45 @@ export default function Pricing() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: '💬',
-                title: 'Free Consultation',
-                description: 'Start with a no-obligation discussion about your project',
+                icon: "💬",
+                title: "Free Consultation",
+                description:
+                  "Start with a no-obligation discussion about your project",
               },
               {
-                icon: '📱',
-                title: 'Mobile Responsive',
-                description: 'Your site will look perfect on all devices',
+                icon: "📱",
+                title: "Mobile Responsive",
+                description: "Your site will look perfect on all devices",
               },
               {
-                icon: '🔒',
-                title: 'SSL Certificate',
-                description: 'Secure connection for your visitors',
+                icon: "🔒",
+                title: "SSL Certificate",
+                description: "Secure connection for your visitors",
               },
               {
-                icon: '⚡',
-                title: 'Fast Loading',
-                description: 'Optimized for speed and performance',
+                icon: "⚡",
+                title: "Fast Loading",
+                description: "Optimized for speed and performance",
               },
               {
-                icon: '📈',
-                title: 'Basic SEO',
-                description: 'Search engine optimization built-in',
+                icon: "📈",
+                title: "Basic SEO",
+                description: "Search engine optimization built-in",
               },
               {
-                icon: '🤝',
-                title: 'Training & Support',
-                description: 'Learn how to manage your site with ongoing help',
+                icon: "🤝",
+                title: "Training & Support",
+                description: "Learn how to manage your site with ongoing help",
               },
             ].map((item, index) => (
-              <div key={index} className="bg-[#1a1f2e] p-8 rounded-xl shadow-md text-center">
+              <div
+                key={index}
+                className="bg-[#1a1f2e] p-8 rounded-xl shadow-md text-center"
+              >
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-100 mb-2">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-100 mb-2">
+                  {item.title}
+                </h3>
                 <p className="text-gray-400">{item.description}</p>
               </div>
             ))}
@@ -170,8 +190,9 @@ export default function Pricing() {
           <div className="bg-gradient-to-br from-[#0DEFFE] to-[#4FADFE] p-12 rounded-2xl text-center text-white">
             <h2 className="text-4xl font-bold mb-6">Get a Free Consultation</h2>
             <p className="text-xl text-cyan-100 mb-8">
-              Not sure about costs? Schedule a free consultation to discuss your project.
-              We'll provide a detailed quote based on your specific requirements.
+              Not sure about costs? Schedule a free consultation to discuss your
+              project. We'll provide a detailed quote based on your specific
+              requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
